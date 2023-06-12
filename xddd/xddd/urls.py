@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from xddd.views import nombre
 from xddd.views import sumar
 from xddd.views import probando_template
@@ -23,6 +23,7 @@ from xddd.views import diahoy
 from xddd.views import prueba_loader_otra_plantilla
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("appdeprueba/",include("appdeprueba.urls")),
     path("nombre/<nombre>",nombre),
     path("sumar/<num>",sumar),
     path("probandotemplate/",probando_template),

@@ -54,3 +54,10 @@ def sumar(self,num):
 def diahoy(self):
     hoy = datetime.date()
     return HttpResponse(hoy)
+
+
+def home(request):
+    return HttpResponse("vista de inicio")
+
+def cursos(request):
+    return HttpResponse("vista cursos")
