@@ -4,10 +4,10 @@ from django.shortcuts import HttpResponse
 
 
 def home(request):
-    return HttpResponse("vista de inicio")
+    return render(request, "index.html")
 
 def cursos(request):
-    return HttpResponse("vista cursos")
+    return render(request, "cursos.html")
 
 def profesores(request):
     return HttpResponse("vista de profes")
