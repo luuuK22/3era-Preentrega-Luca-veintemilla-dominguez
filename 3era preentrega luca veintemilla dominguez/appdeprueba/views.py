@@ -4,13 +4,19 @@ from django.shortcuts import HttpResponse
 
 
 def home(request):
-    return render(request, "appdeprueba/index.html")
+    return render(request, "appdeprueba/inicio.html")
 
 def cursos(request):
-    return render(request, "cursos.html")
+    return render(request, "appdeprueba/cursos.html")
 
 def profesores(request):
-    return HttpResponse("vista de profes")
+    return render(request, "appdeprueba/Profesor.html")
 
 def alumnos(request):
-    return HttpResponse("vista de alumnos")
+    return  render(request, "appdeprueba/Estudiantes.html")
+
+def entregables(request):
+    return render(request, "appdeprueba/entregables.html")
+
+def iniciar_sesion(request):
+    return render(request, "appdeprueba/iniciar_sesion.html")
