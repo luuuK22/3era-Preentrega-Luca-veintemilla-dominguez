@@ -13,13 +13,7 @@ def probando_template(self):
     edad = 19
     dicc = {"nombre":nombre,"apellido":apellido,"edad":edad,"dia":dia_de_hoy,"notas":notas}
 
-# mihtml = open("C:/Users/lukia/OneDrive/Documentos/biblioteca/programacion/Python/coder python/django pruebas/proyectoprueba/templates/template.html")
 
-# plantilla = Template(mihtml.read())
-
-# mihtml.close()
-
-# micontexto = Context(dicc)
 
     plantilla = loader.get_template("template.html")
 

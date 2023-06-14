@@ -13,10 +13,10 @@ def profesores(request):
     return render(request, "appdeprueba/Profesor.html")
 
 def alumnos(request):
-    return  render(request, "appdeprueba/Estudiantes.html")
+    return  render(request, "appdeprueba/Estudiante.html")
 
 def entregables(request):
-    return render(request, "appdeprueba/entregables.html")
+    return render(request, "appdeprueba/entregable.html")
 
 def iniciar_sesion(request):
     return render(request, "appdeprueba/iniciar_sesion.html")

@@ -29,5 +29,5 @@ urlpatterns = [
     path("probandotemplate/",probando_template),
     path("diahoy/",diahoy),
     path("pruebaotraplanti/<nombre>",prueba_loader_otra_plantilla)
-
+    
 ]
