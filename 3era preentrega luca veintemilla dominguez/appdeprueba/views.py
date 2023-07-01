@@ -3,6 +3,7 @@ from django.shortcuts import HttpResponse
 from appdeprueba.forms import *
 from appdeprueba.models import *
 
+
 def home(request):
     return render(request, "appdeprueba/inicio.html")
 
@@ -68,7 +69,7 @@ def estudiantes_formu(request):
     return render(request, "appdeprueba/estudianteformulario.html", {"miFormulario": miFormulario})
 
 def busquedacamada(request):
-    return render(request,"appdeprueba/busquedacamada.html")
+    return render(request,"appdeprueba/templates/busquedacamada.html")
 
 def buscar(request):
 

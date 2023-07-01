@@ -21,3 +21,4 @@ class Estudianteform(forms.Form):
     apellido = forms.CharField()
     email = forms.EmailField()
     
+    
